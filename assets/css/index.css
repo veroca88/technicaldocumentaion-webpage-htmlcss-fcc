@@ -1,0 +1,66 @@
+body {
+    background-image: url(/assets/images/bg.png);
+    font-family: 'Inconsolata', monospace;
+    color: indigo;
+}
+
+#title {
+    grid-area: title;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#navigbar {
+    grid-area: navigbar;
+}
+
+#docu {
+    grid-area: docu;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+#main-doc {
+    font-size: 1.3em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    "title title"
+    "navigbar docu"
+    "footer footer"
+}
+
+#introduction {
+    font-style: italic;
+}
+
+.main-section {
+    margin-block-start: 0px;
+    margin-block-end: 1px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+#basics {
+    font-style: italic;
+}
+
+#terminology {
+    font-style: italic;
+}
+
+#grid-container {
+    font-style: italic;
+}
+
+#grid-items {
+    font-style: italic;
+}
+
+.nav-link {
+    width: 300px;
+}
